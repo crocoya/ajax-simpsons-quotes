@@ -31,9 +31,41 @@
       <div class="container">
         <h1 class="title">Simpson API</h1>
 
-        <div class="content" id="chuck-norris"></div>
+        <div class="content" id="simpson">
+          <button id="btn" onclick="giveMeQuote()">
+            Call me a character with a quote
+          </button>
+          <div id="quote"></div>
+        </div>
       </div>
     </section>
+
+    <style>
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 60px;
+      }
+
+      #btn {
+        background: rgb(245, 212, 27);
+        color: #fff;
+        font-size: 25px;
+        padding: 12px 36px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 6px;
+        border: 2px solid rgb(245, 212, 27);
+        transition: all 0.3s ease;
+        cursor: pointer;
+        text-decoration: none;
+      }
+    </style>
 
     <!-- We need to load axios first! -->
     <script
